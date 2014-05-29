@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<title>Keyboard</title>
+<link rel="stylesheet" type="text/css" href="keyboard.css" />
+<body>
+    <div class="container">
+        <input type="button" value="展开/收起键盘" id="open" class="open" />
+        <span>输出结果1:</span><input type="text" class="result" />
+        <span>输出结果2:</span><input type="text" class="result" /><br/>
+    </div>
+    <script type="text/javascript" src="./lib/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="./j.keyboard.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#open').click(Keyboard.toggleKeyboard);
+            Keyboard.initKeyboard({
+                //left : 600,
+                //top : 40,
+                //keyboardName : 'lowerCaseKeyboard',
+                defaultInput : $('input.result:first'),
+                confirm : function() {
+                     console.log($('[focused]').val());
+                },
+                fn : function() {
+                    console.log($('[focused]').val());
+                },
+                inputs : $('input.result')
+            });
+        });
+    </script>
+</body>
+</html>
