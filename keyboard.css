@@ -1,0 +1,50 @@
+@charset "utf-8";
+*{ margin:0px; padding:0px;}
+html,body{ width:100%; height:100%; font-size:14px; color:#333; font-family:"microsoft YaHei","宋体",Arial;}
+a{ color:#333; text-decoration:none;cursor:pointer;}
+a.active{ color:#cf0000; text-decoration:none}
+img,a img{ border:0px;}
+ul{ list-style:none; overflow:hidden; margin:0px; padding:0px;}
+ul li{ list-style:none; overflow:hidden; margin:0px; padding:0px;}
+.clear{ width:100%; height:0px; line-height:0px; clear:both}
+
+.container {text-align: center; padding-top:15px;}
+.keyboard {display:none; position:relative; border:1px solid #ccc;background:#fff;border-radius: 10px;width: 835px; height: 320px;font-size: 30px;}
+.keyboard .keyboardType {display:none;}
+.keyboard ul {list-style: none;padding-top:4px;}
+.keyboard ul.ulNum {width:810px; margin:0 auto;}
+.keyboard ul.UpperLetter1,ul.LowerLetter1 { width:810px; margin:0 auto;}
+.keyboard ul.UpperLetter2,ul.LowerLetter2 { width:729px; margin:0 auto;}
+.keyboard ul.UpperLetter3,ul.LowerLetter3 { width:816px; margin:0 auto;}
+.keyboard ul.letterBottom { width:816px; margin:0 auto;}
+
+.keyboard ul.ulSign1 { width:810px; margin:0 auto;}
+.keyboard ul.ulSign2 { width:816px; margin:0 auto;}
+.keyboard ul.ulNumBotton {width:816px; margin:0 auto;}
+.keyboard ul li { width:81px; height:75px; background:url(images/num_1.png) no-repeat; float:left; cursor:pointer; text-align:center; line-height:70px; font-size:40px; text-shadow:2px 2px 0px #fff;}
+.keyboard ul li.active {position: relative;left: 1px;top: 1px;background:url(images/num_1_2.png) no-repeat;}
+.keyboard ul li.shift {margin-right: 0px;}
+.keyboard ul li.back { width:124px; height:75px; background:url(images/num_3.png) no-repeat; float:right;}
+.keyboard ul li.back img{display:block; margin:15px auto 0 auto;}
+.keyboard ul li.back { background:url(images/num_3_2.png) no-repeat;}
+
+.keyboard ul li.sign,.keyboard ul li.confirm {width:218px; height:75px; margin-left: 0px;background:url(images/num_4.png) no-repeat; color:#fff; text-shadow:2px 2px 0px #5f666e; font-size:36px;}
+.keyboard ul li.sign,.keyboard ul li.confirm{background:url(images/num_4_2.png) no-repeat; }
+.keyboard ul li.space {width: 380px; height:75px; background:url(images/num_2.png) no-repeat; color:#787e84; text-shadow:2px 2px 0px #fff; font-size:30px;}
+.keyboard ul li.space {background:url(images/num_2_2.png) no-repeat; }
+.keyboard ul li.confirm { font-size:30px;}
+/*首页input*/
+.container input{ width:176px; height:38px;text-align:center; line-height:30px; border:0px; }
+.container span{ font-size:14px; padding:0 10px;}
+input.open{ background:url(images/btn.png) no-repeat;}
+input.open {background:url(images/btn_2.png) no-repeat;}
+input.result{ width:167px; height:30px; padding:4px 6px 4px 3px; background:url(images/input.png) no-repeat;}
+input.inputFocused{ background:url(images/input_2.png) no-repeat;}
+/*首页input end*/
+.upperCaseKeyboard .uppercase,.lowerCaseKeyboard .lowercase { width:124px; height:75px; background:url(images/num_3.png) no-repeat;}
+.upperCaseKeyboard .uppercase img,.lowerCaseKeyboard .lowercase img{ display:block; margin:15px auto 0 auto;}
+.keyboard ul li.uppercase,.lowerCaseKeyboard .lowercase{ background:url(images/num_3_2.png) no-repeat;}
+
+.keyboard ul li.fn{width:124px; height:75px; background:url(images/num_3.png) no-repeat; color:#fff; text-shadow:2px 2px 0px #5f666e;}
+.keyboard ul li.fn{background:url(images/num_3_2.png) no-repeat;}
+
